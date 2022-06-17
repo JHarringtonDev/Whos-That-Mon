@@ -13,3 +13,21 @@
 .hide{
     filter: brightness(0);
 }
+
+#pikachu{
+height: auto;
+width: 20rem;
+}
+
+#intro{
+font-size: 2rem;
+padding-top: 6rem;
+}
+
+#home{
+    margin-top: 3rem;
+}
+
+body{
+    background-image: url(https://www.serebii.net/pokemonshirts/shirts/201.jpg);
+}
