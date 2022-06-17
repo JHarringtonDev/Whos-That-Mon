@@ -1,0 +1,15 @@
+#pkmnLogo{
+   height: 8rem;
+}
+
+.mon{
+    height:30rem;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    filter: drop-shadow(10px 10px 4px rgba(0, 0, 0, 0.3));
+}
+
+.hide{
+    filter: brightness(0);
+}
