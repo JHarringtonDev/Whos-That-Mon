@@ -1,22 +1,15 @@
 <%- include('partials/header') -%>
-  <div class="container">
-    <div class="row justify-content-center mt-5">
-      <!-- <ul class="row list-unstyled"> -->
-        <!-- <% for(var i=0; i<posts.length; i++) {%>
-          <li class="col-6 justify-content-between mt-5">
-            <a href="/post/<%= posts[i]._id%>">
-              <img class="img-fluid" src="<%= posts[i].image%>">
-            </a>
-          </li>
-        <% } %> -->
-        <img class="hide mon" src="" alt="">
-    <div><button class="getMon">Get Pokemon</button>
-        <form action="">
-            <input type="text">
+  <div class="container mainBox bg-primary rounded">
+    <div class="row mt-5 justify-content-center gameContainer">
+        <img class="mon" src="../imgs/pkmn151/0.png" alt="">
+        <h1 class="resultPrompt fw-bold text-center text-white"></h1>
+    <div class="row justify-content-md-center">
+        <button class="getMon col col-lg-2 btn btn-secondary">Get Pokemon</button>
+        <form class="col-md-auto form-control-lg" action="">
+            <input class="" type="text">
         </form>
-        
-        <button class="show">Submit</button></div>
-        <!-- </ul> -->
+        <button class="show col col-lg-2 btn btn-secondary">Submit</button>
+    </div>
     </div>
   </div>  
 <%- include('partials/footer') -%>

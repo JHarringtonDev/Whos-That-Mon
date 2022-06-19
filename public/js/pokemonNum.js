@@ -1,28 +1,6 @@
-// import {checkDexNumber} from 'pokemonNum.js'
+//This is the logic to determin the name of the current Pokémon
 
-document.querySelector(".show").addEventListener("click", removeClass)
-
-let selectedMon 
-let answer 
-
-function removeClass() {
-    checkDexNumber(selectedMon)
-    document.querySelector(".resultPrompt").innerText = `It's ${answer}!`
-    document.querySelector(".mon").classList.remove('hide')
-}
-
-document.querySelector(".getMon").addEventListener("click", chooseMon)
-
-function chooseMon() {
-    document.querySelector(".resultPrompt").innerText = `Who's That Pokémon?`
-    document.querySelector(".mon").classList.add("hide")
-    selectedMon = Math.floor(Math.random()* 151) + 1
-    document.querySelector(".mon").src = `../imgs/pkmn151/${selectedMon}.png`
-}
-
-//This is the logic to determine the name of the current Pokémon
-
-function checkDexNumber(checkedMon){
+export function checkDexNumber(checkedMon){
     switch (checkedMon) {
         case 1:
             answer = 'Bulbasaur';
