@@ -30,8 +30,12 @@ width: 20rem;
 }
 
 #intro{
-font-size: 2rem;
+font-size: 1.7rem;
 padding-top: 6rem;
+}
+
+.profileContain{
+    padding: 1rem;
 }
 
 #home{

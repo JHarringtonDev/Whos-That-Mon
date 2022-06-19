@@ -1,23 +1,37 @@
-// import {checkDexNumber} from 'pokemonNum.js'
-
 document.querySelector(".show").addEventListener("click", removeClass)
+document.querySelector(".getMon").addEventListener("click", chooseMon)
+document.querySelector("#userAnswer").addEventListener("keypress", function(event){
+    if (event.key === "Enter"){
+        if(document.querySelector(".mon").classList.contains("hide")){
+            document.querySelector(".show").click();
+        }else{
+            document.querySelector(".getMon").click();
+        }
+    }
+});
 
 let selectedMon 
 let answer 
 
 function removeClass() {
     checkDexNumber(selectedMon)
-    document.querySelector(".resultPrompt").innerText = `It's ${answer}!`
-    document.querySelector(".mon").classList.remove('hide')
+    let userChoice = document.querySelector("#userAnswer").value
+    if(userChoice.toLowerCase() == answer.toLowerCase()){
+        document.querySelector(".resultPrompt").innerText = `That's correct! It's ${answer}!`
+    }else{
+    document.querySelector(".resultPrompt").innerText = `Sorry that's incorrect. It's ${answer}!`
+    }
+    document.querySelector(".mon").classList.remove("hide")
 }
 
-document.querySelector(".getMon").addEventListener("click", chooseMon)
+
 
 function chooseMon() {
     document.querySelector(".resultPrompt").innerText = `Who's That Pokémon?`
     document.querySelector(".mon").classList.add("hide")
     selectedMon = Math.floor(Math.random()* 151) + 1
     document.querySelector(".mon").src = `../imgs/pkmn151/${selectedMon}.png`
+    document.querySelector("#userAnswer").value = ""
 }
 
 //This is the logic to determine the name of the current Pokémon
