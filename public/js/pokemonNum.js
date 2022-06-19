@@ -1,6 +1,6 @@
-//This is the logic to determin the name of the current Pokémon
-
-export function checkDexNumber(checkedMon){
+//This is the logic to determine the name of the current Pokémon
+let answer
+function checkDexNumber(checkedMon){
     switch (checkedMon) {
         case 1:
             answer = 'Bulbasaur';
@@ -457,3 +457,5 @@ export function checkDexNumber(checkedMon){
         break;
     }
 }
+
+export{checkDexNumber, answer}
