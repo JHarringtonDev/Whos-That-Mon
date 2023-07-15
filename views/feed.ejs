@@ -1,6 +1,10 @@
 <%- include('partials/header') -%>
   <div class="container mainBox bg-primary rounded">
     <div class="row mt-5 justify-content-center gameContainer">
+      <div class="row text-white justify-content-center">
+        <!-- <h2 class="col-4 fw-bold text-center" id="highDisplay">Personal Best: <%= user.highScore %></h2> -->
+        <h2 class="col-4 fw-bold text-center" id="currentDisplay">Current Score: 0</h2>
+      </div>
         <img class="mon" src="../imgs/pkmn151/0.png" alt="">
         <h1 class="resultPrompt fw-bold text-center text-white"></h1>
     <div class="row justify-content-md-center">
@@ -12,4 +16,8 @@
     </div>
     </div>
   </div>  
+  <!-- <div>
+      <button class="btn-primary submitScore">Submit New High Score</button>
+  </div>
+  <span class="invis"><%= user.userName %></span> -->
 <%- include('partials/footer') -%>

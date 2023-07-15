@@ -52,3 +52,14 @@ body{
     -webkit-text-stroke: 2.5px black;
     -webkit-text-fill-color: white;
 }
+
+#currentDisplay, #highDisplay{
+    filter: drop-shadow(5px 5px 4px rgba(0, 0, 0, 0.3));
+    font-size: 3rem;
+    -webkit-text-stroke: 2px black;
+    -webkit-text-fill-color: white;
+}
+
+.invis{
+    opacity: 0;
+}
